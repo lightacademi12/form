@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title> Online Form Registration</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    
+</head>
+<body>
+    <div class="contact-title">
+        <h1>REGISTRATION FORM </h1><br>
+        <h2>lIGHT INTERNATIONAL ECEDEMY </h2>
+    </div>
+    <div class="contact-form">
+        <form action="https://formsubmit.co/lightacademi@gmail.com" method="post">
+        
+            <input  name="name" class="form-control" placeholder="your name" required><br>
+            <input  name="father name" class="form-control" placeholder="your father name" required><br>
+            <input  name="mothers name" class="form-control" placeholder="your mothers name" required><br>
+            <input name="date of birth" class="form-control" placeholder="your dob" required><br>
+            <input name="contact no" class="form-control" placeholder="your contact no" required><br>
+            <input name="gmail" class="form-control" placeholder="Gmail.com" required><br>
+            <input name="state no." class="form-control" placeholder="State No." required><br>
+            <h2>Enter the faculty you want to join</h2>
+
+           <center> <div class="container">
+                <ul class="ks-cboxtags">
+                 <li><input name="faculty" class="single-click" type="checkbox" id="checkbox1">
+                <label for="checkbox1">science</label>
+                </li>         
+                
+                
+                <li><input name="faculty" class="single-click" type="checkbox" id="checkbox2">
+                 <label for="checkbox2">hm</label>
+                 </li>
+          
+                 <li><input name="faculty" class="single-click" type="checkbox" id="checkbox3">
+                 <label for="checkbox3">science</label>
+                </li>
+                
+                <li><input name="faculty" class="single-click" type="checkbox" id="checkbox4">
+                <label for="checkbox4">IT</label>
+                </li>
+                
+                <li><input name="faculty" class="single-click" type="checkbox" id="checkbox5">
+                <label for="checkbox5">management</label>
+                </li>
+                </ul>
+            </div></center>
+                     
+                <textarea name="message" class="form-control" placeholder="any message" row="4"required></textarea><br>
+            <input  type="submit" class="form-control submit" value="REGISTER NOW">
+        </form>
+    </div>
+    <script type="text/javascript">
+        $('.single-click').on('change',function(){
+            $('single-click').not(this).prop('checked', false)
+        })
+    </script>
+</body>
+</html>
